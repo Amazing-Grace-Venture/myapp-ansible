@@ -1,5 +1,5 @@
 ---
-- hosts: webservers 
+- hosts: k8s 
   become: True
   tasks:
     - name: Install packages
