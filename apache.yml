@@ -16,8 +16,7 @@
       - copy
       notify:
        - restart apache
-       
-     handlers:
-     - name: restart apache
-       service: name=httpd state=restarted
+    handlers:
+    - name: restart apache
+      service: name=httpd state=restarted
      
