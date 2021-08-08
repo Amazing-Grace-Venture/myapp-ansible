@@ -14,8 +14,8 @@
       copy: src=index.html dest=/var/www/html/
       tags:
       - copy
-    notify:
-    - start apache webserver 
+      notify:
+      - start apache webserver 
       
   handlers:
     - name: start apache webserver
