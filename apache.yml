@@ -23,4 +23,9 @@
       - copy
       notify:
       - start apache
+      
+     handlers:
+       - name: start apache
+         service: name=httpd state=started enabled=true
+         ignore_errors: true
 ...
