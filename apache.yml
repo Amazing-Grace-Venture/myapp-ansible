@@ -14,5 +14,13 @@
       copy: src=index.html dest=/var/www/html/
       tags:
       - copy
+    notify:
+	  - start apache webserver 
+      
+  handlers:
+    - name: start apache webserver
+      service: name=httpd state=started
+      tags:
+      - start 
      
      
