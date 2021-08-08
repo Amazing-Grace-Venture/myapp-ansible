@@ -18,7 +18,3 @@
       notify:
       - start apache
       
-      handlers:
-      - name: start apache
-        service: name=httpd state=restarted enabled=true
-...
